@@ -15,7 +15,7 @@ const TableHead = {
     template: ` 
     <tr class=table-head>
         <td v-for="(value, index) in rowData" :class="statusExtraction(index)"@click="$emit('openModal', index)">
-            <img src="../../static/images/file_edit_icon.png">
+            <img src="static/images/file_edit_icon.png">
             [{value}]        
         </td>
     </tr>

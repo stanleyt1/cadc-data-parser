@@ -23,7 +23,7 @@ const ColumnPickerModal = {
             <div class="popup">
                 <div class="head">
                     <h1>Change Header</h1>
-                    <img @click="closeModal" src="static/assets/exit_icon.png" />
+                    <img @click="closeModal" src="static/images/exit_icon.png" />
                 </div>
                 <div class="body">
                     <p>Change <span>[{headers[index]}]</span> to: <span>[{selected}]</span></p>

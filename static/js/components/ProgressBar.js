@@ -9,7 +9,7 @@ var ProgressBar = {
         <div class="progress-bar">   
             <h1 v-for="state in states">
                 <span v-bind:class="{active: currentState === state}">[{state}]</span>
-                <img v-if="state != 'Submit'"  src="../../static/images/black_arrow_right.png">
+                <img v-if="state != 'Submit'"  src="static/images/black_arrow_right.png">
             </h1>
         </div>
     `

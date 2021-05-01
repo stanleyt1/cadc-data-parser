@@ -9,8 +9,6 @@ var Button = {
     template: `
         <button :disabled="isDisabled" class="next-btn" @click="$emit('action')">
             [{text}]
-            <img src="../../static/images/white_arrow_right.png">
-            <img src="/static/images/white_arrow_right.png">
             <img src="static/images/white_arrow_right.png">
         </button>
     `
