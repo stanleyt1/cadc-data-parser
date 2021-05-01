@@ -54,7 +54,7 @@ const FileTable = {
         this.headers = this.parsedFile[0];
         this.numValid = 0;
         let headers = new Set();
-        const desiredHeaders = new Set(["due", "firstName", "lastName"]);
+        const desiredHeaders = new Set(["A", "due", "firstName", "lastName"]);
         // push status of every column to this.status
         for (let i = 0; i < this.headers.length; i++) {
             let element = this.headers[i];
@@ -75,7 +75,7 @@ const FileTable = {
         calculateStatus() {
             this.numValid = 0;
             let headers = new Set();
-            const desiredHeaders = new Set(["due", "firstName", "lastName"]);
+            const desiredHeaders = new Set(["A", "due", "firstName", "lastName"]);
             let temp = [];
             // push status of every column to this.status
             for (let i = 0; i < this.headers.length; i++) {
