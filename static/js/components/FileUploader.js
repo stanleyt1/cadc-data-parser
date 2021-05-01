@@ -54,7 +54,7 @@ var FileUploader = {
                 <input @change="getFiles" id="file-input" type="file"
                     accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
                     multiple />
-                    <img v-if="files.length == 0" src="static/images/upload-file-thumbnail.png">
+                    <img v-if="files.length == 0" src="../../static/images/upload-file-thumbnail.png">
                     <p v-if="files.length == 0">Click or Drag to Upload Files</p>
                     <FileTile v-for="file in files" @removeFile="deleteFile" v-bind:name="file.name" v-bind:key="file.name"></FileTile>
             </div>
